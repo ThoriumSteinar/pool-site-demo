@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АкваЛайн — обслуживание бассейнов в Одессе</title>
+  <meta name="description" content="Чистка, химия, оборудование и ремонт бассейнов в Одессе и области. Учебный демо-сайт.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Шапка: логотип + навигация (ссылки ведут к #id секций ниже) -->
+  <header class="site-header">
+    <a href="#hero" class="logo">Аква<span>Лайн</span></a>
+    <nav class="nav" aria-label="Главное меню">
+      <a href="#services">Услуги</a>
+      <a href="#works">Работы</a>
+      <a href="#how">Как работаем</a>
+      <a href="#prices">Цены</a>
+      <a href="#calc">Расчёт</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO: название, подзаголовок, главные кнопки — правь текст здесь -->
+    <section id="hero" class="hero section">
+      <div class="hero-content">
+        <p class="hero-label">Обслуживание бассейнов · Одесса</p>
+        <h1>Чистая вода<br>без хлопот</h1>
+        <p class="hero-tagline">
+          Чистим, настраиваем химию, ремонтируем оборудование и готовим бассейн к зиме.
+          Частные дома, отели и спортклубы Одессы и области.
+        </p>
+        <div class="hero-actions">
+          <a href="#calc" class="btn btn-primary">Рассчитать стоимость</a>
+          <a href="#services" class="btn btn-outline">Смотреть услуги</a>
+        </div>
+
+        <!-- Мини-факты под кнопками -->
+        <ul class="hero-stats">
+          <li><strong>8 лет</strong><span>на рынке</span></li>
+          <li><strong>350+</strong><span>бассейнов</span></li>
+          <li><strong>24/7</strong><span>аварийный выезд</span></li>
+        </ul>
+      </div>
+
+      <!-- Главное фото. Своё = положи файл в images/ и поменяй src, width, height, alt -->
+      <div class="hero-visual">
+        <img src="images/pool-stone-terrace.jpg"
+             alt="Голубой бассейн с каменным бортиком у дома, рядом лежаки и фонтанчики"
+             width="1024" height="673">
+      </div>
+    </section>
+
+    <!-- УСЛУГИ: карточки — новая услуга = скопируй <article class="service-card"> -->
+    <section id="services" class="services section">
+      <div class="section-inner">
+        <p class="section-label">Что делаем</p>
+        <h2 class="section-title">Услуги</h2>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">🧽</span>
+            <h3>Чистка бассейна</h3>
+            <p>
+              Пылесос по дну, щётка по стенкам, сбор листьев с поверхности,
+              промывка фильтра. Разово или по графику.
+            </p>
+            <span class="service-price">от 800 ₴</span>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">🧪</span>
+            <h3>Химия и анализ воды</h3>
+            <p>
+              Замеряем pH и уровень хлора, подбираем дозировку, убираем
+              зелёную воду и мутность. Вода безопасна для кожи и глаз.
+            </p>
+            <span class="service-price">от 600 ₴</span>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">⚙️</span>
+            <h3>Оборудование</h3>
+            <p>
+              Монтаж и настройка насосов, фильтров, подогрева и подсветки.
+              Подбираем технику под объём вашего бассейна.
+            </p>
+            <span class="service-price">от 2 500 ₴</span>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">🔧</span>
+            <h3>Ремонт и герметизация</h3>
+            <p>
+              Ищем протечки, меняем форсунки и уплотнители, латаем плёнку,
+              обновляем швы плитки.
+            </p>
+            <span class="service-price">от 1 800 ₴</span>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">❄️</span>
+            <h3>Консервация на зиму</h3>
+            <p>
+              Сливаем воду до нужного уровня, продуваем трубы, ставим
+              компенсаторы и накрываем чехлом. Весной — расконсервация.
+            </p>
+            <span class="service-price">от 1 200 ₴</span>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">📅</span>
+            <h3>Сервис по графику</h3>
+            <p>
+              Приезжаем 1–4 раза в месяц, ведём журнал показателей
+              и сами закупаем расходники.
+            </p>
+            <span class="service-price">от 2 500 ₴/мес</span>
+          </article>
+        </div>
+
+        <!-- КОМАНДА: фото слева, текст справа. Фото — в images/ -->
+        <div class="team">
+          <div class="team-photo">
+            <img src="images/company-team.png"
+                 alt="Пятеро мастеров компании в оранжевых жилетах и защитных касках"
+                 width="800" height="534" loading="lazy">
+          </div>
+
+          <div class="team-text">
+            <h3>Кто приедет к вам</h3>
+            <p>
+              Все услуги выше делают наши мастера в штате — подрядчиков со стороны
+              не привлекаем. За вашим бассейном закрепляется один человек,
+              он знает вашу воду и оборудование.
+            </p>
+            <ul class="team-list">
+              <li>5 мастеров в штате</li>
+              <li>Допуск к работе с химией и электрикой</li>
+              <li>Приезжают в форме и со своим инструментом</li>
+              <li>Аварийный мастер на связи круглосуточно</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- РАБОТЫ: галерея фото. Новое фото = положи файл в images/
+         и скопируй блок <figure class="gallery-item"> -->
+    <section id="works" class="works section">
+      <div class="section-inner">
+        <p class="section-label">Галерея</p>
+        <h2 class="section-title">Наши работы</h2>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="images/pool-stone-terrace.jpg"
+                 alt="Бассейн изогнутой формы с каменным бортиком, фонтанчики и лежаки на террасе"
+                 width="1024" height="673" loading="lazy">
+            <figcaption>
+              <strong>Частный дом · каменная терраса</strong>
+              Сезонное обслуживание: чистка дна и стенок, настройка фонтанчиков,
+              вода держит показатели всё лето.
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/pool-wood-deck.jpg"
+                 alt="Бассейн с деревянным настилом и лестницей, вокруг брусчатка и хвойный сад"
+                 width="1024" height="768" loading="lazy">
+            <figcaption>
+              <strong>Загородный участок · деревянный настил</strong>
+              Запуск после зимы: промывка фильтра, новая химия,
+              замена уплотнителей на форсунках.
+            </figcaption>
+          </figure>
+        </div>
+
+        <p class="works-note">
+          Фото учебные — взяты как примеры для практики вёрстки.
+        </p>
+      </div>
+    </section>
+
+    <!-- КАК РАБОТАЕМ: 4 шага. Новый шаг = скопируй <li class="step"> -->
+    <section id="how" class="how section">
+      <div class="section-inner">
+        <p class="section-label">Процесс</p>
+        <h2 class="section-title">Как работаем</h2>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">1</span>
+            <h3>Заявка</h3>
+            <p>Звонок или форма на сайте. Уточняем размеры бассейна и проблему.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">2</span>
+            <h3>Осмотр</h3>
+            <p>Мастер приезжает, берёт пробу воды и проверяет оборудование.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">3</span>
+            <h3>Работы</h3>
+            <p>Чистим, настраиваем химию, ремонтируем. Фиксируем цену до старта.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">4</span>
+            <h3>Отчёт</h3>
+            <p>Показываем замеры до и после, даём план обслуживания на сезон.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ЦЕНЫ: три тарифа. Выделенный = class="price-card featured" -->
+    <section id="prices" class="prices section">
+      <div class="section-inner">
+        <p class="section-label">Тарифы</p>
+        <h2 class="section-title">Цены</h2>
+
+        <div class="prices-grid">
+          <article class="price-card">
+            <h3>Разовый</h3>
+            <p class="price-value">800 ₴<span>/выезд</span></p>
+            <ul class="price-list">
+              <li>Чистка дна и стенок</li>
+              <li>Сбор мусора с поверхности</li>
+              <li>Промывка фильтра</li>
+              <li>Замер pH и хлора</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Вызвать мастера</a>
+          </article>
+
+          <article class="price-card featured">
+            <span class="price-badge">Популярный</span>
+            <h3>Сезонный</h3>
+            <p class="price-value">2 500 ₴<span>/мес</span></p>
+            <ul class="price-list">
+              <li>Всё из «Разового»</li>
+              <li>2 выезда в месяц</li>
+              <li>Химия входит в цену</li>
+              <li>Журнал показателей воды</li>
+              <li>Скидка 10% на ремонт</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-block">Оформить сервис</a>
+          </article>
+
+          <article class="price-card">
+            <h3>Бизнес</h3>
+            <p class="price-value">от 7 000 ₴<span>/мес</span></p>
+            <ul class="price-list">
+              <li>Отели, спортклубы, базы отдыха</li>
+              <li>До 4 выездов в месяц</li>
+              <li>Аварийный выезд 24/7</li>
+              <li>Документы для проверок</li>
+              <li>Персональный менеджер</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Запросить смету</a>
+          </article>
+        </div>
+
+        <p class="prices-note">
+          Цены учебные и примерные. Точную сумму мастер называет после осмотра.
+        </p>
+      </div>
+    </section>
+
+    <!-- КАЛЬКУЛЯТОР: считает объём и цену в script.js -->
+    <section id="calc" class="calc section">
+      <div class="section-inner">
+        <p class="section-label">Калькулятор</p>
+        <h2 class="section-title">Расчёт стоимости</h2>
+
+        <div class="calc-wrap">
+          <form class="calc-form" id="calc-form" novalidate>
+            <div class="field">
+              <label for="length">Длина, м</label>
+              <input type="number" id="length" name="length" value="8" min="1" max="50" step="0.1" required>
+            </div>
+            <div class="field">
+              <label for="width">Ширина, м</label>
+              <input type="number" id="width" name="width" value="4" min="1" max="30" step="0.1" required>
+            </div>
+            <div class="field">
+              <label for="depth">Средняя глубина, м</label>
+              <input type="number" id="depth" name="depth" value="1.5" min="0.5" max="5" step="0.1" required>
+            </div>
+            <div class="field">
+              <label for="service">Услуга</label>
+              <select id="service" name="service">
+                <option value="cleaning">Разовая чистка</option>
+                <option value="monthly" selected>Сезонное обслуживание (месяц)</option>
+                <option value="chemistry">Химия и анализ воды</option>
+                <option value="winter">Консервация на зиму</option>
+              </select>
+            </div>
+            <p class="calc-error" id="calc-error" role="alert" hidden></p>
+          </form>
+
+          <!-- Результат обновляется сразу при изменении полей -->
+          <aside class="calc-result" aria-live="polite">
+            <p class="calc-result-label">Объём воды</p>
+            <p class="calc-volume"><span id="out-volume">48</span> м³</p>
+
+            <p class="calc-result-label">Примерная стоимость</p>
+            <p class="calc-total"><span id="out-total">6 820</span> ₴</p>
+
+            <p class="calc-hint" id="out-hint">
+              Сезонное обслуживание: 2 выезда в месяц, химия включена.
+            </p>
+            <a href="#contact" class="btn btn-primary btn-block">Записаться</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ: нативные <details> — новый вопрос = скопируй блок <details> -->
+    <section id="faq" class="faq section">
+      <div class="section-inner">
+        <p class="section-label">Вопросы</p>
+        <h2 class="section-title">Частые вопросы</h2>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Почему вода позеленела?</summary>
+            <p>
+              Это водоросли: не хватает хлора или сбился pH. Делаем шоковую обработку,
+              чистим фильтр и выравниваем показатели — обычно вода светлеет за 1–2 дня.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Как часто нужна чистка?</summary>
+            <p>
+              Летом при активном купании — 2 раза в месяц. Если бассейн под навесом
+              и людей мало, хватает одного выезда.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Химию покупать самим?</summary>
+            <p>
+              На тарифе «Сезонный» и «Бизнес» химия входит в цену. При разовом выезде
+              можем привезти свою или использовать вашу.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Работаете зимой?</summary>
+            <p>
+              Да. Осенью консервируем бассейн, зимой следим за чехлом и уровнем воды,
+              весной запускаем систему обратно.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ: форма без бэкенда — проверка и сообщение в script.js -->
+    <section id="contact" class="contact section">
+      <div class="section-inner">
+        <p class="section-label">Связаться</p>
+        <h2 class="section-title">Контакты</h2>
+
+        <div class="contact-wrap">
+          <div class="contact-info">
+            <p class="contact-text">
+              Позвоните или оставьте заявку — перезвоним в течение дня
+              и подскажем, что делать с водой прямо сейчас.
+            </p>
+            <!-- <address> — правильный тег для контактов. Курсив по умолчанию убран в CSS -->
+            <address class="contact-list">
+              <p><span>Адрес</span>Одесса, ул. Генуэзская, 24, офис 3</p>
+              <p><span>Телефон</span><a href="tel:+380480000000">+380 48 000-00-00</a></p>
+              <p><span>Почта</span><a href="mailto:hello@akvaline.example">hello@akvaline.example</a></p>
+              <p><span>График</span>Пн–Сб 08:00–20:00 · аварийно 24/7</p>
+              <p><span>Выезд</span>Одесса и область до 40 км</p>
+            </address>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Как вас зовут" required>
+            </div>
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+380 __ ___-__-__" required>
+            </div>
+            <div class="field">
+              <label for="message">Что с бассейном</label>
+              <textarea id="message" name="message" rows="4" placeholder="Например: вода мутная, размер 6×3 м"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>АкваЛайн — вымышленная компания · учебный проект песочницы · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
